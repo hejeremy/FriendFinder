@@ -7,6 +7,7 @@ module.exports = function(app){
 
     app.post("/api/tables", function(req, res) {
         friends.push(req.body);
+        console.log('apiRoutes.js app.post happened.');
         res.json(true);
     });
 }
