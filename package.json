@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/hejeremy/FriendFinder/issues"
   },
-  "homepage": "https://github.com/hejeremy/FriendFinder#readme"
+  "homepage": "https://github.com/hejeremy/FriendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "method-override": "^2.3.9",
+    "path": "^0.12.7"
+  }
 }
