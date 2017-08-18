@@ -1,19 +1,4 @@
 var friendsData = [{
-    "name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-    "scores":[
-        5,
-        1,
-        4,
-        4,
-        5,
-        1,
-        2,
-        5,
-        4,
-        1
-    ]
-}, {
     "name":"Jeremy",
     "photo":"https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/428805_10150988495142421_2054884899_n.jpg?oh=95cb8cad6a4a5d10821c743fc86c522a&oe=5A31B529",
     "scores":[
@@ -27,6 +12,96 @@ var friendsData = [{
         2,
         1,
         3
+    ]
+}, {
+    "name":"Goofy",
+    "photo":"https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Goofy.svg/690px-Goofy.svg.png",
+    "scores":[
+        4,
+        3,
+        5,
+        2,
+        5,
+        2,
+        1,
+        1,
+        5,
+        5
+    ]
+}, {
+    "name":"Mickey",
+    "photo":"https://i.pinimg.com/736x/c8/cf/6e/c8cf6ee7bd9015696b438fadd8d9fed0--mickey-mouse-pictures-la-star.jpg",
+    "scores":[
+        3,
+        4,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2,
+        4,
+        4
+    ]
+}, {
+    "name":"Donald",
+    "photo":"http://vignette3.wikia.nocookie.net/deathbattlefanon/images/1/16/Donald-Duck-4.png/revision/latest?cb=20160321213717",
+    "scores":[
+        1,
+        4,
+        1,
+        5,
+        1,
+        5,
+        5,
+        2,
+        1,
+        2
+    ]
+}, {
+    "name":"Kanna",
+    "photo":"https://cdn.shopify.com/s/files/1/1002/4218/products/kamui1_1024x1024.jpg?v=1490385084",
+    "scores":[
+        5,
+        2,
+        2,
+        1,
+        4,
+        2,
+        3,
+        4,
+        5,
+        5
+    ]
+}, {
+    "name":"Fafnir",
+    "photo":"http://cdn.animeherald.com/aniheraldcdn/2017/02/Miss-Kobayashis-Dragon-Maid-Episode-5-004-20170218.jpg",
+    "scores":[
+        2,
+        5,
+        5,
+        4,
+        5,
+        5,
+        5,
+        5,
+        1,
+        1
+    ]
+}, {
+    "name":"Tohru",
+    "photo":"https://cdn-images-1.medium.com/max/1280/0*sh_VM38909y2PtYQ.jpg",
+    "scores":[
+        5,
+        4,
+        4,
+        3,
+        2,
+        3,
+        4,
+        2,
+        3,
+        4
     ]
 }];
 

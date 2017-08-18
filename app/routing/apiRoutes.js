@@ -31,7 +31,7 @@ function findBestFit(inputObj) {
     var friend = {
         name: 'No Results',
         photo: 'https://cdn.dribbble.com/users/308895/screenshots/2598725/no-results.gif',
-        score: 5
+        score: 40
     }
     for (let i=0; i<friends.length; i++) {
         let score = testCompatibility(inputObj, friends[i]);
@@ -51,7 +51,5 @@ function testCompatibility(obj1, obj2) {
     for (let i=0; i<obj1.scores.length; i++) {
         totalScore += Math.abs(obj1.scores[i] - obj2.scores[i]);
     }
-
-    let averageScore = totalScore / obj1.scores.length;
-    return averageScore;
+    return totalScore;
 }
