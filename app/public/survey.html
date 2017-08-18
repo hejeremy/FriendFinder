@@ -186,10 +186,9 @@
             </div>
         </div>
 
-        <!-- <script src='../routing/apiRoutes.js'></script> -->
         <script type="text/javascript">
-// Capture the form inputs 
 $("#submit").on("click", function(){
+    event.preventDefault();
 
     // Form validation
     function validateForm() {
@@ -216,20 +215,39 @@ $("#submit").on("click", function(){
             scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
         }
 
-        //console.log(userData);
+        console.log(userData);
         // AJAX post the data to the friends API.
 
-        $.post("/api/friends", userData)
-            .done(function(data) {
-                console.log(data);
-                console.log('Submitted');
-            });
+        $.post("/api/friends", userData, function(data) {
+            if (data) {
+                console.log('Submitted!');
+            }
+        });
+
+        runFriendsQuery();
     } else {
         alert("Please fill out all fields before submitting!");
     }
 
     return false;
 });
+
+function runFriendsQuery() {
+    var currentURL = window.location.origin;
+
+    $.ajax({ url: currentURL + "/api/friends", method: "GET" })
+    .done(function(friends) {
+
+        // Here we are logging the URL so we have access to it for troubleshooting
+        console.log("------------------------------------");
+        console.log("URL: " + currentURL + "/api/friends");
+        console.log("------------------------------------");
+
+        // Here we then log the NYTData to console, where it will show up as an object.
+        console.log(friends);
+        console.log("------------------------------------");
+    });
+}
         </script>
     </body>
 </html>
